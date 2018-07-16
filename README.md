@@ -36,3 +36,13 @@ cd Chesster
 Work on heltour/chesster out of those directories and commit/push like you normally
 would.
 
+When you're done working run:
+
+`vagrant halt`
+
+later on to start working again run:
+
+`vagrant up`
+
+then follow the instructions above to run Chesster / heltour.
+
