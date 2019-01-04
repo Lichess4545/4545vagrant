@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get upgrade --assume-yes
-sudo apt-get install --assume-yes build-essential python python-dev postgresql postgresql-server-dev-10 libjpeg-dev libpng-dev libgif-dev mercurial git libtiff-dev virtualenv python-pip redis
+sudo apt-get install --assume-yes build-essential python3.6 python3.6-dev postgresql postgresql-server-dev-10 libjpeg-dev libpng-dev libgif-dev mercurial git libtiff-dev virtualenv redis
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
