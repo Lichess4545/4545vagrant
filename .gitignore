@@ -1,6 +1,4 @@
 Chesster
 heltour
-test_chesster_slack_token.js
-test_slack_token.js
-test_heltour_token.js
 .vagrant/
+.env
