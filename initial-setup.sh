@@ -47,7 +47,7 @@ curl -s -# https://www.lakin.ca/4/5/4/5/${_4545VAGRANTPW}/heltour_lichess4545_pu
 
 cd /home/vagrant/Chesster
 export NODE_ENV=development
-yarn run migrate
+yarn run migrate --url 'postgres://chesster:scrappy pulpit gourde hinders@localhost/chesster'
 
 cd /home/vagrant/heltour/
 source /home/vagrant/heltour/env/bin/activate
