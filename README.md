@@ -16,8 +16,8 @@ and appropriate keys in place to just run heltour/chesster for simple developmen
 
 Run `vagrant ssh` in two different terminals. Then in one of them run:
 ```
+source heltour-env/bin/activate
 cd heltour
-source env/bin/activate
 fab runserver
 ```
 When that is started, In the other run:
