@@ -22,7 +22,7 @@ ln -sf /vagrant/heltour
 
 cd /home/vagrant/
 virtualenv heltour-env --no-site-packages --prompt="(heltour):" --python=/usr/bin/python3.6
-source /home/vagrant/heltour-env
+source /home/vagrant/heltour-env/bin/activate
 cd /home/vagrant/heltour
 pip install -r requirements.txt
 fab update
@@ -54,5 +54,5 @@ export NODE_ENV=development
 yarn run migrate --url 'postgres://chesster:scrappy pulpit gourde hinders@localhost/chesster'
 
 cd /home/vagrant/heltour/
-source /home/vagrant/heltour/env/bin/activate
+source /home/vagrant/heltour-env/bin/activate
 fab -R vagrant latestdb
