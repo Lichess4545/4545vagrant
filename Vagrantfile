@@ -13,8 +13,8 @@ Vagrant.configure(2) do |config|
      vb.name = "4545-tools"
   end
 
-  config.vm.provision :shell, :path => "./initial-setup.sh", run: "once", privileged: false
-  config.vm.provision :shell, :path => "./startup.sh", run: "always", privileged: false
+  config.vm.provision :shell, :path => "./scripts/initial-setup.sh", run: "once", privileged: false
+  config.vm.provision :shell, :path => "./scripts/startup.sh", run: "always", privileged: false
 
   config.ssh.forward_agent = true
 end
