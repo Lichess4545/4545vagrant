@@ -26,6 +26,14 @@ cd Chesster
 yarn run start
 ```
 
+To enable the usage of the lichess API by heltour, open a third terminal and run:
+```
+vagrant ssh
+source heltour-env/bin/activate
+cd heltour
+fab runapiworker
+```
+
 Work on heltour/chesster out of those directories and commit/push like you normally
 would.
 
@@ -39,3 +47,5 @@ later on to start working again run:
 
 then follow the instructions above to run Chesster / heltour.
 
+This video gives an introduction to both heltour and Chesster for developers:
+https://www.youtube.com/watch?v=zCt91lDLvOM
