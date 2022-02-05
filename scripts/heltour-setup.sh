@@ -17,9 +17,10 @@ echo "localhost:*:heltour_lichess4545:heltour_lichess4545:sown shuts combiner ch
 
 cd /home/vagrant/
 # Setup virtualenv for heltour
-virtualenv heltour-env --no-site-packages --prompt="(heltour):" --python=/usr/bin/python3.6
+virtualenv heltour-env --prompt="(heltour):" --python=/usr/bin/python3
 source /home/vagrant/heltour-env/bin/activate
 cd /home/vagrant/heltour
-pip install -r requirements.txt
+pip3 install poetry
+poetry install
 fab update
 fab -R vagrant latestdb
