@@ -20,6 +20,7 @@ cd /home/vagrant/
 virtualenv heltour-env --prompt="(heltour):" --python=/usr/bin/python3
 source /home/vagrant/heltour-env/bin/activate
 cd /home/vagrant/heltour
+pip3 install --upgrade pip
 pip3 install poetry
 poetry install
 fab update
