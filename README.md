@@ -31,14 +31,16 @@ python manage.py migrate
 
 # running the environment
 
-Run `vagrant ssh` in two different terminals. Then in one of them run:
+Open two different terminals. Then in one of them run:
 ```
+vagrant ssh
 source heltour-env/bin/activate
 cd heltour
 fab runserver
 ```
 When that is started, In the other run:
 ```
+vagrant ssh
 cd Chesster
 yarn run start
 ```
@@ -49,6 +51,12 @@ vagrant ssh
 source heltour-env/bin/activate
 cd heltour
 fab runapiworker
+```
+
+If you need celery (i.e. tasks from `heltour/tournament/tasks.py`), open yet another terminal and run:
+```
+vagrant ssh
+./heltour-env/bin/celery -A heltour worker -B -c 4 --loglevel=INFO -Ofair
 ```
 
 The website will be available at `localhost:8000`
